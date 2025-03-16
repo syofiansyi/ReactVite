@@ -1,1 +1,20 @@
-Ini project awal
+--- npm creat vite@latest syimarket
+
+---- untuk install tailwinds
+
+- npm install tailwindcss @tailwindcss/vite
+
+ubah pada vite.config nya tambahkan tailwindcss
+- vite.config.ts
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+
+
+pada index.css ganti @import "tailwindcss";
+
+
